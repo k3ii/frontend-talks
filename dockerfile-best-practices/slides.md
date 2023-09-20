@@ -44,6 +44,13 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 })
 ```
+
+<style>
+.slidev-layout code {
+  font-size: 1.7em;
+  line-height: 1.1em;
+}
+</style>
 ---
 theme: default
 layout: center
