@@ -13,12 +13,16 @@
         pkgs = import nixpkgs { inherit system; };
 
         nodejs  = pkgs.nodejs_20;
+        yarn = pkgs.yarn;
+        pnpm = pkgs.nodePackages.pnpm;
       in
       {
           devShell = pkgs.mkShell
           {
               buildInputs = [
               nodejs
+              yarn
+              pnpm
             ];
           };
       }
